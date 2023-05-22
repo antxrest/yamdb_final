@@ -65,7 +65,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         regex = re.compile(r'^[\w.@+-]+')
         if not regex.match(value):
             raise serializers.ValidationError('Недоспустимые символы')
-        elif value == 'me':
+        if value == 'me':
             raise ValidationError('Недоспустимое имя ')
         elif User.objects.filter(username=value).exists():
             raise ValidationError('Неверная авторизация')
