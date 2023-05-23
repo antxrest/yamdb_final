@@ -1,4 +1,4 @@
-# Django app
+# Django application
 from django.apps import AppConfig
 
 
