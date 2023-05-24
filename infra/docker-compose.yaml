@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: arigatosha/yamdb_final:latest
+    image: arigatosha/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
@@ -29,5 +29,6 @@ services:
       - web
 
 volumes:
+  postgresql:
   static_value:
   media_value:
