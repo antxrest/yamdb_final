@@ -125,4 +125,4 @@ docker-compose down
 Документация после запуска доступна по адресу localhost/redoc.
 
 ### Автор:
-[Антон Молчанов](https://github.com/antxrest)
+[Антон Молчанов](https://github.com/arigatosha)
